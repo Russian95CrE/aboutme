@@ -154,6 +154,11 @@ function typeWriter(element, text, speed = 100) {
     type();
 }
 
+// Yes
+function myfriend() {
+    location.href = "https://luminumsrv.win";
+}
+
 // Clock
 function updateClock() {
     const clockElement = document.getElementById('taskbar-clock');
@@ -191,9 +196,12 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.window-control[data-close="home"]').forEach(btn => btn.addEventListener('click', () => hideWindow('home')));
     document.querySelectorAll('.window-control[data-close="projects"]').forEach(btn => btn.addEventListener('click', () => hideWindow('projects')));
     document.querySelectorAll('.window-control[data-close="social"]').forEach(btn => btn.addEventListener('click', () => hideWindow('social')));
-    document.getElementById('open-dog')?.addEventListener('click', () => showWindow('dog'));
-    document.getElementById('taskbar-dog')?.addEventListener('click', () => showWindow('dog'));
-    document.querySelectorAll('.window-control[data-close="dog"]').forEach(btn => btn.addEventListener('click', () => hideWindow('dog')));
+    document.getElementById('open-stella')?.addEventListener('click', () => showWindow('stella'));
+    document.getElementById('taskbar-stella')?.addEventListener('click', () => showWindow('stella'));
+    document.querySelectorAll('.window-control[data-close="stella"]').forEach(btn => btn.addEventListener('click', () => hideWindow('stella')));
+    document.getElementById('open-nick')?.addEventListener('click', () => showWindow('nick'));
+    document.getElementById('taskbar-nick')?.addEventListener('click', () => showWindow('nick'));
+    document.querySelectorAll('.window-control[data-close="nick"]').forEach(btn => btn.addEventListener('click', () => hideWindow('nick')));
     document.getElementById('open-hardware')?.addEventListener('click', () => showWindow('hardware'));
     document.getElementById('taskbar-hardware')?.addEventListener('click', () => showWindow('hardware'));
     document.querySelectorAll('.window-control[data-close="hardware"]').forEach(btn => btn.addEventListener('click', () => hideWindow('hardware')));
@@ -203,7 +211,8 @@ window.addEventListener('DOMContentLoaded', function() {
     makeWindowDraggable('home');
     makeWindowDraggable('projects');
     makeWindowDraggable('social');
-    makeWindowDraggable('dog');
+    makeWindowDraggable('stella');
+    makeWindowDraggable('nick');
     makeWindowDraggable('hardware');
     // Start clock
     setInterval(updateClock, 1000);
